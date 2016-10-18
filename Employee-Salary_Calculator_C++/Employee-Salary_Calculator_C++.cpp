@@ -109,7 +109,7 @@ int main()
 
 
 
-	//calculate and display a 10% raise for both employees
+	//Calculate and display a 10% raise for both employees
 
 		//Display the first employee's first and last name, and salary after a 10% raise
 	cout << "After a 10% raise, " << employee1.getFirstName() << " " << employee1.getLastName() << " will earn on a yearly basis: $" <<
