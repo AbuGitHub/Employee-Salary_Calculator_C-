@@ -56,7 +56,7 @@ public:
 		return lastName;			//Return lastName to the main function
 	}
 
-};							//end Employee class
+};							//End Employee class
 
 int main()
 {
@@ -68,17 +68,17 @@ int main()
 				  //First object Employee#1
 
 	cout << "Employee #1" << "\n \n";
-	cout << "Please enter a monthly salary amount for an employee" << "\n";				//Get a monthly salary from the user
+	cout << "Please enter a monthly salary amount for an employee" << "\n";			//Get a monthly salary from the user
 	cin >> salary;
 
-	cout << "Please enter that employee's first name" << "\n";							//Get a first name from the user
+	cout << "Please enter that employee's first name" << "\n";				//Get a first name from the user
 	cin >> fname;
 
-	cout << "Please enter that employee's last name" << "\n";							//Get a last name from the user
+	cout << "Please enter that employee's last name" << "\n";				//Get a last name from the user
 	cin >> lname;
 
 	cout << "\n";																		//Skip a line
-	Employee employee1(salary, fname, lname);											//Create an object of the employee class and send it salary, first name, and last name user inputs
+	Employee employee1(salary, fname, lname);						//Create an object of the employee class and send it salary, first name, and last name user inputs
 	
 				//Display object 1. Display an employee's first name, last name, and yearly salary (calculated with the monthly salary).
 
@@ -90,17 +90,17 @@ int main()
 				//Second object Employee#2
 
 	cout << "Employee #2" << "\n \n";
-	cout << "Please enter a monthly salary amount for a second employee" << "\n";					//Get a monthly salary from the user
+	cout << "Please enter a monthly salary amount for a second employee" << "\n";		//Get a monthly salary from the user
 	cin >> salary;
 
-	cout << "Please enter that employee's first name" << "\n";							//Get a first name from the user
+	cout << "Please enter that employee's first name" << "\n";				//Get a first name from the user
 	cin >> fname;
 
-	cout << "Please enter that employee's last name" << "\n";							//Get a last name from the user
+	cout << "Please enter that employee's last name" << "\n";				//Get a last name from the user
 	cin >> lname;
 
 	cout << "\n";																		//Skip a line
-	Employee employee2(salary, fname, lname);											//Create an object of the employee class and sent it salary, first name, and last name user inputs	
+	Employee employee2(salary, fname, lname);						//Create an object of the employee class and sent it salary, first name, and last name user inputs	
 	
 			//Display object 2. Display an employee's first name, last name, and yearly salary (calculated with the monthly salary)
 
