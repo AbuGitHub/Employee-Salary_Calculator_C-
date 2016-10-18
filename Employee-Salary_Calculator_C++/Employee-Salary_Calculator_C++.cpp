@@ -16,7 +16,7 @@ private:
 public:
 	Employee(int salary, string fname, string lname) : monthlySalary(salary), firstName(fname), lastName(lname)
 	{                               //constructor
-		if (monthlySalary < 0)		//If monthly salary is a negative number, assume salary is $0.
+		if (monthlySalary < 0)			//If monthly salary is a negative number, assume salary is $0.
 			monthlySalary = 0;
 	}                               //end constructor
 
@@ -24,12 +24,12 @@ public:
 
 	void setMonthlySalary(int salary)
 	{
-		monthlySalary = salary;		//Set the monthly salary based on user input
+		monthlySalary = salary;			//Set the monthly salary based on user input
 	}
 
 	int getMonthlySalary() const
 	{
-		return monthlySalary;		//Return monthlySalary to the main function
+		return monthlySalary;			//Return monthlySalary to the main function
 	}
 
 	//First name set & get functions
@@ -56,11 +56,11 @@ public:
 		return lastName;			//Return lastName to the main function
 	}
 
-};									//end Employee class
+};							//end Employee class
 
 int main()
 {
-	int salary;						//Hold salary
+	int salary;					//Hold salary
 	string fname;					//Hold first name
 	string lname;					//Hold last name
 
@@ -90,7 +90,7 @@ int main()
 				//Second object Employee#2
 
 	cout << "Employee #2" << "\n \n";
-	cout << "Please enter a monthly salary amount for a second employee" << "\n";		//Get a monthly salary from the user
+	cout << "Please enter a monthly salary amount for a second employee" << "\n";					//Get a monthly salary from the user
 	cin >> salary;
 
 	cout << "Please enter that employee's first name" << "\n";							//Get a first name from the user
