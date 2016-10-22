@@ -15,48 +15,57 @@ private:
 
 public:
 	Employee(int salary, string fname, string lname) : monthlySalary(salary), firstName(fname), lastName(lname)
-	{                               //constructor
-		if (monthlySalary < 0)			//If monthly salary is a negative number, assume salary is $0.
+	{                               
+		//constructor
+		
+		//If monthly salary is a negative number, assume salary is $0.
+		if (monthlySalary < 0)			
 			monthlySalary = 0;
-	}                               //end constructor
+	}                               
+		//end constructor
 
 	 //Monthly Salary set & get Functions
 
 	void setMonthlySalary(int salary)
 	{
-		monthlySalary = salary;			//Set the monthly salary based on user input
+		//Set the monthly salary based on user input
+		monthlySalary = salary;			
 	}
 
 	int getMonthlySalary() const
 	{
-		return monthlySalary;			//Return monthlySalary to the main function
+		//Return monthlySalary to the main function
+		return monthlySalary;			
 	}
 
 	//First name set & get functions
-
 	void setFirstName(string fname)
 	{
-		firstName = fname;			//Set the first name based on user input
+		//Set the first name based on user input
+		firstName = fname;			
 	}
 
 	string getFirstName() const
 	{
-		return firstName;			//Return firstName to the main function
+		//Return firstName to the main function
+		return firstName;			
 	}
 
 	//Last name set & get functions
-
 	void setLastName(string lname)
 	{
-		lastName = lname;			//Set the last name based on user input
+		//Set the last name based on user input
+		lastName = lname;			
 	}
 
 	string getLastName() const
 	{
-		return lastName;			//Return lastName to the main function
+		//Return lastName to the main function
+		return lastName;			
 	}
 
-};							//End Employee class
+};							
+//End Employee class
 
 int main()
 {
@@ -64,59 +73,68 @@ int main()
 	string fname;					//Hold first name
 	string lname;					//Hold last name
 
-
-				  //First object Employee#1
-
+	//First object Employee#1
+	
+	//Get a monthly salary from the user
 	cout << "Employee #1" << "\n \n";
-	cout << "Please enter a monthly salary amount for an employee" << "\n";			//Get a monthly salary from the user
+	cout << "Please enter a monthly salary amount for an employee" << "\n";			
 	cin >> salary;
 
-	cout << "Please enter that employee's first name" << "\n";				//Get a first name from the user
+	//Get a first name from the user
+	cout << "Please enter that employee's first name" << "\n";				
 	cin >> fname;
 
-	cout << "Please enter that employee's last name" << "\n";				//Get a last name from the user
+	//Get a last name from the user
+	cout << "Please enter that employee's last name" << "\n";				
 	cin >> lname;
 
-	cout << "\n";																		//Skip a line
-	Employee employee1(salary, fname, lname);						//Create an object of the employee class and send it salary, first name, and last name user inputs
+	//Skip a line
+	cout << "\n";	
 	
-				//Display object 1. Display an employee's first name, last name, and yearly salary (calculated with the monthly salary).
-
+	//Create an object of the employee class and send it salary, first name, and last name user inputs
+	Employee employee1(salary, fname, lname);						
+	
+	//Display object 1. Display an employee's first name, last name, and yearly salary (calculated with the monthly salary)
 	cout << employee1.getFirstName() << " " << employee1.getLastName() << "'s yearly salary is: " << (employee1.getMonthlySalary() * 12);
-	cout << "\n\n\n";																	//Skip 3 lines
+	
+	//Skip 3 lines
+	cout << "\n\n\n";																	
 
+	//Second object Employee#2
 
-
-				//Second object Employee#2
-
+	//Get a monthly salary from the user
 	cout << "Employee #2" << "\n \n";
-	cout << "Please enter a monthly salary amount for a second employee" << "\n";		//Get a monthly salary from the user
+	cout << "Please enter a monthly salary amount for a second employee" << "\n";		
 	cin >> salary;
 
-	cout << "Please enter that employee's first name" << "\n";				//Get a first name from the user
+	//Get a first name from the user
+	cout << "Please enter that employee's first name" << "\n";				
 	cin >> fname;
 
-	cout << "Please enter that employee's last name" << "\n";				//Get a last name from the user
+	//Get a last name from the user
+	cout << "Please enter that employee's last name" << "\n";				
 	cin >> lname;
 
-	cout << "\n";																		//Skip a line
-	Employee employee2(salary, fname, lname);						//Create an object of the employee class and sent it salary, first name, and last name user inputs	
+	//Skip a line
+	cout << "\n";																		
+	Employee employee2(salary, fname, lname);	
 	
-			//Display object 2. Display an employee's first name, last name, and yearly salary (calculated with the monthly salary)
-
+	//Create an object of the employee class and sent it salary, first name, and last name user inputs
+	
+	//Display object 2. Display an employee's first name, last name, and yearly salary (calculated with the monthly salary)
 	cout << employee2.getFirstName() << " " << employee2.getLastName() << "'s yearly salary is: " << (employee2.getMonthlySalary() * 12);
-	cout << "\n\n\n";																	//Skip 3 lines
 
-
+	//Skip 3 lines
+	cout << "\n\n\n";																	
 
 	//Calculate and display a 10% raise for both employees
 
-		//Display the first employee's first and last name, and salary after a 10% raise
+	//Display the first employee's first and last name, and salary after a 10% raise
 	cout << "After a 10% raise, " << employee1.getFirstName() << " " << employee1.getLastName() << " will earn on a yearly basis: $" <<
 		((employee1.getMonthlySalary() * 12) * 0.10) + (employee1.getMonthlySalary() * 12) << "\n\n\n";
 
 
-		//Display the second employee's first and last anem, and salary after a 10% raise
+	//Display the second employee's first and last anem, and salary after a 10% raise
 	cout << "After a 10% raise, " << employee2.getFirstName() << " " << employee2.getLastName() << " will earn on a yearly basis: $" <<
 		((employee2.getMonthlySalary() * 12) * 0.10) + (employee2.getMonthlySalary() * 12) << "\n\n";
 
